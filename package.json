@@ -1,0 +1,29 @@
+{
+  "name": "refactor",
+  "version": "1.0.0",
+  "description": "A default CSS refactoring setup for any project.",
+  "main": "builds/development/index.html",
+  "author": "Morten Rand-Hendriksen",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-stylelint": "^8.0.0",
+    "prettier": "^1.14.0",
+    "prettier-stylelint": "^0.4.2",
+    "pump": "^3.0.0",
+    "stylelint": "^9.4.0",
+    "stylelint-config-rational-order": "0.0.2",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1"
+  },
+  "scripts": {
+    "build": "gulp"
+  }
+}

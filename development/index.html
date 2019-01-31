@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Dopweb Test - Bootstrap to AMP Conversion</title>
+  <link rel="canonical" href="article.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Dopweb Test",
+      "@author": "Nish Achchige",
+      "@publisher": "Nish Achchige",
+      "headline": "Open-source framework for publishing content",
+      "datePublished": "2015-10-07T12:02:41Z",
+      "image": [
+        "./images/logo.jpg"
+      ]
+    }
+  </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <!-- SEO meta -->
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="./images/favicon.png" rel="icon">
+  <link href="./images/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- AMP core -->
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+  <!-- styles -->
+  <style amp-custom>
+    .btn,img{vertical-align:middle}.carousel,.carousel-inner,.carousel-item{position:relative}a,h4,li{letter-spacing:2px}#mobile-nav-toggle,.btn:not(:disabled):not(.disabled),.carousel-indicators li,.close:not(:disabled):not(.disabled),.navbar-toggler:not(:disabled):not(.disabled),.page-link:not(:disabled):not(.disabled){cursor:pointer}:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent;scroll-behavior:smooth}footer,header,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;text-align:left;background-color:#fff}.table,a{background-color:transparent}p,ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}b{font-weight:bolder}a{color:#007bff;-webkit-text-decoration-skip:objects}a:hover{color:#0056b3;text-decoration:underline}.btn:focus,.btn:hover,.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}img{border-style:none}button{border-radius:0;text-transform:none}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}.btn:focus,.form-control:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}button,input,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}.container,.container-fluid{margin-right:auto;margin-left:auto}button,input{overflow:visible}[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}textarea{overflow:auto;resize:vertical}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2,h4{margin-top:0;margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}.form-group,.table{margin-bottom:1rem}#header #logo h1,#hero h1{font-family:Philosopher,sans-serif}h1{font-size:2.5rem}h2{font-size:2rem}.list-unstyled{padding-left:0;list-style:none}.container,.container-fluid{padding-right:15px;padding-left:15px;width:100%}.img-fluid{max-width:100%}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-md-12,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:576px){.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}}@media (min-width:768px){.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.hero-img{min-height:350px}}@media (min-width:992px){.col-lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}}.table{width:100%;max-width:100%}.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}.form-control::-ms-expand{background-color:transparent;border:0}.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff}.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control:-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-ms-input-placeholder{color:#6c757d;opacity:1}.form-control:disabled{background-color:#e9ecef;opacity:1}.form-inline{display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-align:center;align-items:center}.btn,.navbar-brand{display:inline-block;white-space:nowrap}@media (min-width:576px){.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}}.btn{text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;line-height:1.5}@media screen and (prefers-reduced-motion:reduce){.btn,.form-control{transition:none}}.btn:disabled{opacity:.65}.btn:not(:disabled):not(.disabled).active,.btn:not(:disabled):not(.disabled):active{background-image:none}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active{color:#fff;background-color:#0062cc;border-color:#005cbf}.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(0,123,255,.5)}.btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active{color:#fff;background-color:#545b62;border-color:#4e555b}.btn-secondary:not(:disabled):not(.disabled).active:focus,.btn-secondary:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(108,117,125,.5)}.btn-success:not(:disabled):not(.disabled).active,.btn-success:not(:disabled):not(.disabled):active{color:#fff;background-color:#1e7e34;border-color:#1c7430}.btn-success:not(:disabled):not(.disabled).active:focus,.btn-success:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(40,167,69,.5)}.btn-info:not(:disabled):not(.disabled).active,.btn-info:not(:disabled):not(.disabled):active{color:#fff;background-color:#117a8b;border-color:#10707f}.btn-info:not(:disabled):not(.disabled).active:focus,.btn-info:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(23,162,184,.5)}.btn-warning:not(:disabled):not(.disabled).active,.btn-warning:not(:disabled):not(.disabled):active{color:#212529;background-color:#d39e00;border-color:#c69500}.btn-warning:not(:disabled):not(.disabled).active:focus,.btn-warning:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(255,193,7,.5)}.btn-danger:not(:disabled):not(.disabled).active,.btn-danger:not(:disabled):not(.disabled):active{color:#fff;background-color:#bd2130;border-color:#b21f2d}.btn-danger:not(:disabled):not(.disabled).active:focus,.btn-danger:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(220,53,69,.5)}.btn-light:not(:disabled):not(.disabled).active,.btn-light:not(:disabled):not(.disabled):active{color:#212529;background-color:#dae0e5;border-color:#d3d9df}.btn-light:not(:disabled):not(.disabled).active:focus,.btn-light:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(248,249,250,.5)}.btn-dark:not(:disabled):not(.disabled).active,.btn-dark:not(:disabled):not(.disabled):active{color:#fff;background-color:#1d2124;border-color:#171a1d}.btn-dark:not(:disabled):not(.disabled).active:focus,.btn-dark:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(52,58,64,.5)}.btn-outline-primary:not(:disabled):not(.disabled).active,.btn-outline-primary:not(:disabled):not(.disabled):active{color:#fff;background-color:#007bff;border-color:#007bff}.btn-outline-primary:not(:disabled):not(.disabled).active:focus,.btn-outline-primary:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(0,123,255,.5)}.btn-outline-secondary:not(:disabled):not(.disabled).active,.btn-outline-secondary:not(:disabled):not(.disabled):active{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,.btn-outline-secondary:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(108,117,125,.5)}.btn-outline-success:not(:disabled):not(.disabled).active,.btn-outline-success:not(:disabled):not(.disabled):active{color:#fff;background-color:#28a745;border-color:#28a745}.btn-outline-success:not(:disabled):not(.disabled).active:focus,.btn-outline-success:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(40,167,69,.5)}.btn-outline-info:not(:disabled):not(.disabled).active,.btn-outline-info:not(:disabled):not(.disabled):active{color:#fff;background-color:#17a2b8;border-color:#17a2b8}.btn-outline-info:not(:disabled):not(.disabled).active:focus,.btn-outline-info:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(23,162,184,.5)}.btn-outline-warning:not(:disabled):not(.disabled).active,.btn-outline-warning:not(:disabled):not(.disabled):active{color:#212529;background-color:#ffc107;border-color:#ffc107}.btn-outline-warning:not(:disabled):not(.disabled).active:focus,.btn-outline-warning:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(255,193,7,.5)}.btn-outline-danger:not(:disabled):not(.disabled).active,.btn-outline-danger:not(:disabled):not(.disabled):active{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-outline-danger:not(:disabled):not(.disabled).active:focus,.btn-outline-danger:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(220,53,69,.5)}.btn-outline-light:not(:disabled):not(.disabled).active,.btn-outline-light:not(:disabled):not(.disabled):active{color:#212529;background-color:#f8f9fa;border-color:#f8f9fa}.btn-outline-light:not(:disabled):not(.disabled).active:focus,.btn-outline-light:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(248,249,250,.5)}.btn-outline-dark:not(:disabled):not(.disabled).active,.btn-outline-dark:not(:disabled):not(.disabled):active{color:#fff;background-color:#343a40;border-color:#343a40}h2,h4{color:#000}.btn-outline-dark:not(:disabled):not(.disabled).active:focus,.btn-outline-dark:not(:disabled):not(.disabled):active:focus{box-shadow:0 0 0 .2rem rgba(52,58,64,.5)}.navbar-brand{padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit}h4,p{line-height:2}.close:not(:disabled):not(.disabled):focus,.close:not(:disabled):not(.disabled):hover{color:#000;text-decoration:none;opacity:.75}h5,li{color:#626262}.carousel-inner{width:100%;overflow:hidden}.carousel-item{display:none;-ms-flex-align:center;align-items:center;width:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}.carousel-item-next,.carousel-item.active{display:block;transition:-webkit-transform .6s ease;transition:transform .6s ease;transition:transform .6s ease,-webkit-transform .6s ease}@media screen and (prefers-reduced-motion:reduce){.carousel-item-next,.carousel-item.active{transition:none}}.carousel-item-next.carousel-item-left{-webkit-transform:translateX(0);transform:translateX(0)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.carousel-item-next.carousel-item-left{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.carousel-item-next{position:absolute;top:0;-webkit-transform:translateX(100%);transform:translateX(100%)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.carousel-item-next{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.active.carousel-item-left{-webkit-transform:translateX(-100%);transform:translateX(-100%)}@supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)){.active.carousel-item-left{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.carousel-indicators{position:absolute;right:0;bottom:10px;left:0;z-index:15;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-left:0;margin-right:15%;margin-left:15%;list-style:none}.carousel-indicators li{position:relative;-ms-flex:0 1 auto;flex:0 1 auto;width:30px;height:3px;margin-right:3px;margin-left:3px;text-indent:-999px;background-color:rgba(255,255,255,.5)}.carousel-indicators li::after,.carousel-indicators li::before{position:absolute;left:0;width:100%;height:10px;content:"";display:inline-block}.carousel-indicators li::before{top:-10px}.carousel-indicators li::after{bottom:-10px}.carousel-indicators .active{background-color:#fff}.justify-content-center{-ms-flex-pack:center;justify-content:center}.text-left{text-align:left}#testimonials,.text-center{text-align:center}@media print{*,::after,::before{text-shadow:none;box-shadow:none}a:not(.btn){text-decoration:underline}img{page-break-inside:avoid}h2,p{orphans:3;widows:3}h2{page-break-after:avoid}@page{size:a3}.container,body{min-width:992px}.table{border-collapse:collapse}}#header #logo h1 a,a{text-decoration:none}body{color:#333}h1,h2,h3,h4,h5,h6{margin:0}h2{font-weight:600}h4{font-size:13px;font-weight:700;text-transform:uppercase}h5{font-size:14px;font-weight:500}span,ul{letter-spacing:1px}li{font-size:13px;font-weight:400;line-height:30px;text-transform:capitalize}#hero .btn-get-started,#hero .btns a,.btn{text-transform:uppercase}p{color:#505050;font-size:14px;font-weight:300;letter-spacing:.5px;margin-bottom:20px}.img-fluid{height:60px;margin-bottom:30px;width:60px}#header,.header-shadow{position:fixed;height:48px;top:0;left:0;right:0}.container-full{padding-left:0;padding-right:0}.btn{border:1px solid #fff;border-radius:50px;color:#fff;font-size:11px;font-weight:600;padding:15px 40px;-moz-transition:all .5s ease-in-out 0s;-ms-transition:all .5s ease-in-out 0s;-o-transition:all .5s ease-in-out 0s;-webkit-transition:all .5s ease-in-out 0s;transition:all .5s ease-in-out 0s}.btn-default:hover{color:#fff;background-color:#e6e6e6;border-color:#adadad}#header #logo h1 a span,#hero h1{color:#71c55d}.fa,.fab{font-size:13px}.pull-left{float:left}.pull-right{float:right}#header{background:#fff;z-index:3}.header-shadow{z-index:2;opacity:0;box-shadow:0 3px 7px rgba(0,0,0,.1);transition:opacity .5s ease}#features,#get-started,#mobile-body-overly{height:100%;width:100%}#header #logo{padding:6px 0 0}#header #logo h1{color:#505050;font-size:26px;font-weight:500;letter-spacing:1px;margin:0}#header #logo h1 a{color:#555;line-height:1;display:inline-block}#header #logo img{padding:0;margin:0}#hero{width:100%;height:calc(100vh - 40px);background:url(../images/hero-bg.png) center bottom no-repeat;background-size:100%;position:relative;margin-top:40px}@media (min-width:1025px){#hero{background-attachment:fixed}}#hero .hero-container{position:absolute;bottom:0;top:0;left:0;right:0;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center}#hero h1{margin:0 0 10px;font-size:48px;font-weight:700;line-height:56px}#hero h2,.hero-img{margin-bottom:30px}#hero .btn-get-started,#hero h2,.nav-menu a,.section-title h2,.separator{font-family:Roboto,sans-serif}@media (max-width:768px){#hero h1{font-size:28px;line-height:36px}}#hero h2{color:#777;font-size:20px;font-weight:300}@media (max-width:768px){#hero h2{font-size:18px;line-height:24px;margin-bottom:30px}}@media (max-width:767px) and (orientation:landscape){.hero-img{max-width:250px;max-height:150px;margin-bottom:10px}}@media (max-width:767px) and (orientation:portrait){.hero-img{max-width:300px;max-height:150px}}#hero .btn-get-started{font-weight:400;font-size:13px;letter-spacing:1px;display:inline-block;padding:11px 36px;border-radius:50px;transition:.5s;margin-bottom:30px;border:2px solid #71c55d;background:#fff;color:#71c55d;text-decoration:none}#mobile-nav ul li a,.nav-menu a{letter-spacing:0;text-decoration:none;outline:0}#hero .btn-get-started:hover{background:#71c55d;color:#fff}#hero .btns a{color:#555;font-size:11px;font-weight:600;margin:4px 20px;text-decoration:none;transition:.3s}.nav-menu a,.nav-menu ul li a{transition:.3s;font-size:14px}@media (max-width:575px){#hero .btns a{margin:4px 8px}}#hero .btns a:hover{color:#71c55d}.nav-menu,.nav-menu *{margin:0;padding:0;list-style:none}.nav-menu ul{position:absolute;display:none;top:100%;left:0;z-index:99}#mobile-nav ul li,.nav-menu li{position:relative}.nav-menu li{white-space:nowrap}.nav-menu>li{float:left}.nav-menu li.sfHover>ul,.nav-menu li:hover>ul{display:block}.nav-menu ul li{min-width:180px;transition:.3s}#nav-menu-container{float:right;margin:0}@media (max-width:1024px){#nav-menu-container{display:none}}.nav-menu a{padding:8px;display:inline-block;color:#555;font-weight:400}.nav-menu li:hover>a,.nav-menu>.menu-active>a{color:#71c55d}.nav-menu>li{margin-left:10px}.nav-menu ul{margin:0;padding:10px;box-shadow:0 0 30px rgba(127,137,161,.25);background:#fff}#mobile-body-overly,#mobile-nav{top:0;background:rgba(52,59,64,.9)}.nav-menu ul li a{padding:5px 10px;color:#333;display:block;text-transform:none}.nav-menu li.menu-has-children ul{display:none}.nav-menu li.menu-has-children:hover ul,.nav-menu li.menu-has-children>a:hover ul{display:block}.nav-menu ul li:hover>a{color:#71c55d}.nav-menu ul ul{top:0;left:100%;margin:0}#mobile-nav-toggle{position:fixed;right:0;top:0;z-index:999;margin:4px 20px 0 0;border:0;background:0 0;font-size:24px;display:none;transition:all .4s;outline:0}#mobile-nav-toggle i{color:#555;font-size:24px}@media (max-width:1024px){#mobile-nav-toggle{display:inline}}#mobile-nav{position:fixed;padding-top:18px;bottom:0;z-index:998;visibility:hidden;left:-260px;width:260px;overflow-y:auto;transition:all .4s ease-in}#team .team-block,.play-icon,.video-player,body.mobile-nav-active{overflow:hidden}#mobile-nav.shownav{left:0;visibility:visible}#mobile-nav.hidenav{left:-260px;visibility:hidden}#mobile-nav ul{padding:0;margin:0;list-style:none}#mobile-nav li.menu-has-children ul{display:none}#mobile-nav li.menu-has-children a:hover ul,#mobile-nav li.menu-has-children:hover ul{display:block}#mobile-nav ul li a{color:#fff;font-size:14px;overflow:hidden;padding:6px 22px 6px 15px;position:relative;width:100%;display:block}#mobile-nav ul li a:hover{color:#fff}#mobile-nav ul li li{padding-left:30px}#mobile-nav ul .menu-has-children i{position:absolute;right:0;z-index:99;padding:15px;cursor:pointer;color:#fff}#mobile-nav ul .menu-has-children i.fa-chevron-up,#mobile-nav ul .menu-item-active{color:#71c55d}#mobile-body-overly{z-index:997;left:0;position:fixed;display:none}body.mobile-nav-active #mobile-nav{left:0}body.mobile-nav-active #mobile-nav-toggle i{color:#fff}.padd-section{padding-bottom:80px;padding-top:80px}.section-title{margin-bottom:80px}@media (max-width:992px){.padd-section{padding-top:40px;padding-bottom:40px}.section-title{margin-bottom:40px}}.section-title h2{font-size:45px;font-weight:100;letter-spacing:2px;margin-bottom:20px;text-transform:capitalize}.section-title .separator{margin:0}.separator{color:#626262;font-size:15px;font-weight:300;margin-bottom:30px;text-transform:capitalize}#get-started{display:inline-block}#get-started .feature-block{background:#fff;padding:30px 20px;transition:all .5s ease-in-out 0s}@media (max-width:991px){#get-started .feature-block{margin-bottom:30px}}#get-started .feature-block:hover{box-shadow:0 0 35px rgba(0,0,0,.1);transition:all .5s ease-in-out 0s}#get-started .feature-block h4,#get-started .feature-block p{margin-bottom:20px}#get-started .feature-block a{color:#505050;font-size:12px;font-weight:600;text-decoration:none;text-transform:capitalize;transition:.3s}#get-started .feature-block a:hover{color:#71c55d}#about-img{max-width:100%}#about-us .about-content{padding-top:60px}#about-us .about-content h2{color:#252525;font-family:roboto;font-size:39px;font-weight:100;letter-spacing:2px;margin-bottom:20px;text-transform:capitalize}#about-us .about-content span{font-weight:700;padding-right:10px;text-transform:uppercase}#about-us .about-content ul li{line-height:36px}#about-us .about-content ul li .fa{padding-right:20px}#features{display:inline-block}#features .feature-block{background:#fff;padding:30px 20px;margin-bottom:30px;transition:all .5s ease-in-out 0s}.carousel-preview>span,.carousel-preview>span.selected{height:10px;width:10px;background:#ddd}#features .feature-block:hover{box-shadow:0 0 35px rgba(0,0,0,.1);transition:all .5s ease-in-out 0s}#features .feature-block h4{margin-bottom:20px}#features .feature-block p{margin-bottom:0}.carousel-preview>span{display:inline-block;border-radius:1em;margin:1em .1em}@media (min-width:376px) and (max-width:766px){.carousel-preview>span:nth-child(2n+1){visibility:hidden}}@media (min-width:768px) and (max-width:1023px){.carousel-preview>span:nth-child(2n){visibility:hidden}}@media (min-width:1024px){.carousel-preview>span{visibility:hidden}.carousel-preview>span:nth-child(3n+2){visibility:visible;margin:1em -.75em}}.carousel-preview [option][selected],.carousel-preview>span:hover{background:#71c55d;outline:0}@media (max-width:470px){#carouselWithPreview{min-height:590px}}@media (min-width:471px) and (max-width:640px){#carouselWithPreview{max-height:320px}}@media (min-width:1025px){#carouselWithPreview{min-height:457px}}#carouselWithPreview>div>*{cursor:grab}#team .team-block{box-shadow:0 0 35px rgba(0,0,0,.1);position:relative;width:100%}@media (max-width:991px){#team .team-block{margin-bottom:30px;height:inherit}}#team .team-block .team-content{background:#fff;box-shadow:0 0 4px 0 rgba(0,0,0,.2),0 0 0 0 rgba(0,0,0,.19);bottom:-147px;padding:20px 0;position:absolute;width:100%;transition:all .5s ease-in-out 0s}#team .team-block .team-content ul{display:block;width:100%}#team .team-block .team-content ul li{display:inline-block}#team .team-block .team-content ul li a{color:#626262}#team .team-block .team-content ul li a .fa{float:left;padding-left:10px;padding-right:10px;transition:.3s}#team .team-block .team-content ul li a .fa:hover{color:#71c55d}#team .team-block .team-content ul>span{display:inline-block;font-size:14px;font-weight:300;letter-spacing:.5px;margin-bottom:20px;text-transform:uppercase}#team .team-block:hover .team-content{bottom:0;transition:all .5s ease-in-out 0s}#testimonials .testimonials-content{box-shadow:0 0 35px rgba(0,0,0,.1);display:block;position:relative;width:80vw;max-width:700px;margin:auto;padding:2em}#blog .block-blog .content-blog,#pricing .block-pricing{box-shadow:0 0 0 0 rgba(0,0,0,.2),0 0 4px 0 rgba(0,0,0,.19)}@media (max-width:680px){#testimonials .testimonials-content{max-width:100vw}.testimonials-slider{min-height:360px}}.testimonials-slider{padding:2em;max-height:377px;max-width:80vw}@media (max-width:470px){.testimonials-slider{min-height:90vh;max-width:90vw}}i.fas.fa-quote-right.testimonials-content-icon{color:#71c55d;position:absolute;right:43px;text-align:left;top:-29px;z-index:2;font-size:5em}#testimonials .top-top>h2{font-family:Roboto,sans-serif;font-size:2rem;font-weight:100;letter-spacing:2px;margin-bottom:20px;text-transform:capitalize}#testimonials .top-top>h4{font:700 12px Lato,sans-serif}#testimonials .top-top{padding-top:2em}#testimonials .top-top span{font-size:12px;font-weight:300;margin-left:26px}#pricing .block-pricing{background:#fff;display:inline-block;position:relative;width:100%}@media (max-width:991px){#pricing .block-pricing{margin-bottom:30px}}#pricing .block-pricing .table{margin-bottom:0;padding:30px 15px;max-width:100%;width:100%}#pricing .block-pricing .table h4{padding-bottom:30px}#pricing .block-pricing h2{margin-bottom:30px}#pricing .block-pricing ul{list-style:none;margin:10px auto;max-width:240px;padding:0}#pricing .block-pricing ul li{border-bottom:1px solid rgba(153,153,153,.3);padding:12px 0;text-align:center}#pricing .block-pricing ul li b{color:#3c4857}#pricing .block-pricing .table .table_btn a{background:#71c55d;color:#fff;margin:0;display:inline-block}#pricing .block-pricing .table .table_btn a:hover{background:#55b03f}#pricing .block-pricing .table .table_btn a .fa{font-size:13px;margin-right:5px}@media (max-width:991px){#blog .block-blog{margin-bottom:30px}}#blog .block-blog img{width:100%}#blog .block-blog .content-blog{display:inline-block;min-height:125px;padding:20px 10px;width:100%}#blog .block-blog .content-blog h4{line-height:24px;margin-bottom:20px;text-transform:capitalize;font-weight:400;letter-spacing:0;font-size:16px}#blog .block-blog .content-blog h4 a{color:#555;text-decoration:none;transition:.3s}#blog .block-blog .content-blog h4 a:hover{color:#71c55d}#blog .block-blog .content-blog>span{float:left;font-size:12px}#blog .block-blog .content-blog a.readmore{color:#505050;font-size:12px;font-weight:600;text-decoration:none;transition:.3s;letter-spacing:0;text-transform:capitalize}#blog .block-blog .content-blog a.readmore:hover{color:#71c55d}#newsletter{background:url(../images/newsletter-bg.jpg) center top no-repeat fixed;background-size:cover}#newsletter .overlay{background:linear-gradient(rgba(255,255,255,.9) 0,rgba(255,255,255,.2) 95%);height:100%;width:100%}#newsletter .form-control{border:1px solid #ddd;border-radius:0;color:#888;font-size:11px;font-weight:600;height:50px;text-align:center;width:70%;background:#fff}@media (max-width:575px){#newsletter .form-control{margin-bottom:30px;width:100%}}#newsletter .form-control:focus{border-color:#71c55d;box-shadow:none;outline:0}#newsletter .btn{background:#71c55d;border:0;border-radius:0;height:50px;width:30%;transition:.3s}#newsletter .btn:hover,#newsletter ul li:hover{background:#55b03f}#newsletter .btn::before{content:'>'}@media (max-width:575px){#newsletter .btn{width:100%}}#newsletter .btn .fa{padding-right:10px}#newsletter ul{display:inline-block;margin-top:40px;margin-bottom:0}#newsletter ul li{background:#71c55d;border-radius:50px;float:left;height:35px;line-height:35px;margin-left:10px;margin-right:10px;width:35px;transition:.3s}#newsletter ul li .fa,#newsletter ul li .fab{color:#fff}#contact{background:#fff}#contact .info{color:#222}#contact .info i{font-size:32px;color:#71c55d;float:left}#contact .info p{padding:0 0 10px 50px;margin-bottom:20px;line-height:22px;font-size:14px}#contact .info .email p{padding-top:5px}#contact .social-links{padding-bottom:20px}#contact .social-links a{font-size:18px;display:inline-block;background:#71c55d;color:#fff;line-height:1;padding:6px 0 8px;border-radius:50%;text-align:center;width:36px;height:36px;transition:.3s}#contact .form #errormessage,#contact .form #sendmessage{display:none;padding:15px;font-weight:600;margin-bottom:15px;text-align:center}#contact .social-links a:hover{background:#55b03f;color:#fff}#contact .form #sendmessage{color:#71c55d;border:1px solid #71c55d}#contact .form #errormessage{color:red;border:1px solid red}#contact .form #errormessage.show,#contact .form #sendmessage.show,#contact .form .show{display:block}#contact .form .validation{color:red;display:none;margin:0 0 20px;font-weight:400;font-size:13px}#contact .form input,#contact .form textarea{border-radius:0;box-shadow:none;font-size:14px;padding:12px 10px;line-height:1}#contact .form [type=submit]{background:#71c55d;border:0;padding:1em 1.5em;color:#fff;transition:.4s}#contact .form [type=submit]:hover{background:#92d283}.footer{background:#2a2c30;padding-top:50px}.footer .footer-logo .navbar-brand{color:#fff;display:inline-block;float:none;font-family:Philosopher,sans-serif;font-size:24px;font-weight:500;height:100%;letter-spacing:.2em;padding-left:0;padding-top:0}.footer .footer-logo p{color:#fff;font-size:12px;letter-spacing:1px}.footer .list-menu>h4{color:#fff;padding-bottom:20px}.footer .list-menu ul li a{color:#fff;font-size:12px;padding-left:5px;text-decoration:none;letter-spacing:0}.footer .copyrights{background:#fff;margin-top:50px;text-align:center;padding:25px}.footer .copyrights .credits,.footer .copyrights p{margin:0;padding:0;font-family:"Open Sans",sans-serif;font-weight:400;font-size:14px;letter-spacing:0}.footer .copyrights .credits a,.footer .copyrights p a{letter-spacing:0;color:#71c55d}.play-icon{width:94px;height:94px;background:radial-gradient(#71c55d 50%,rgba(113,197,93,.15) 52%);border-radius:50%;display:block;margin:153px auto 0;position:relative;z-index:2}.play-icon::after,.play-icon:before,.play-icon:hover::before{content:"";position:absolute}.play-icon::after{left:50%;top:50%;-webkit-transform:translateX(-40%) translateY(-50%);transform:translateX(-40%) translateY(-50%);width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:15px solid #fff;z-index:100;transition:all .4s cubic-bezier(.55,.055,.675,.19)}.play-icon:before{width:120px;height:120px;-webkit-animation:pulsate1 2s;animation:pulsate1 2s;-webkit-animation-direction:forwards;animation-direction:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:steps;animation-timing-function:steps;opacity:1;border-radius:50%;border:2px solid rgba(255,255,255,.5);top:-15%;left:-15%;background:rgba(198,16,0,0)}.play-icon:hover::after{border-left:15px solid #71c55d;-webkit-transform:scale(20);transform:scale(20)}.play-icon:hover::before{left:50%;top:50%;-webkit-transform:translateX(-40%) translateY(-50%);transform:translateX(-40%) translateY(-50%);width:0;height:0;border:none;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:15px solid #fff;z-index:200;-webkit-animation:none;animation:none;border-radius:0}@-webkit-keyframes pulsate1{0%{-webkit-transform:scale(.6,.6);transform:scale(.6,.6);opacity:1}100%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity:0}}@keyframes pulsate1{0%{-webkit-transform:scale(.6,.6);transform:scale(.6,.6);opacity:1}100%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity:0}}@-webkit-keyframes pulsate2{0%{-webkit-transform:scale(.1,.1);transform:scale(.1,.1);opacity:1}100%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity:0}}.video-player{position:relative}.vid-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.95)}.poster-image{position:absolute;z-index:1;opacity:.5}.poster-image img{object-fit:cover}.scrollToTop{z-index:9999;position:fixed;opacity:0;right:15px;bottom:15px;visibility:hidden;background:#71c55d;line-height:1;color:#fff;padding:7px 12px 13px;font-size:16px;border-radius:2px;transition:background .5s}.scrollToTop:focus{background:#71c55d;color:#fff;outline:0}.scrollToTop:hover{background:#55b03f;color:#fff}@media (max-width:768px){.scrollToTop{bottom:15px}}
+  </style>
+
+</head>
+
+<body id="pagetop" data-gr-c-s-loaded="true">
+  <!-- Google analytics -->
+<amp-analytics type="gtag" data-credentials="include">
+  <script type="application/json">
+  {
+    "vars" : {
+      "gtag_id": "UA-55234356-4",
+      "config" : {
+        "UA-55234356-4": { "groups": "default" }
+      }
+    }
+  }
+  </script>
+</amp-analytics>
+    
+  <div id="i4c-draggable-container" style="z-index: 1499; width: 0px; height: 0px;">
+    <div data-reactroot="" class="resolved" style="all: initial;"></div>
+  </div>
+  <!-- mobile-nav-btn -->
+  <a id="mobile-nav-toggle" on="tap:AMP.setState({visible: !visible})"><i class="fa fa-bars"></i></a>
+
+
+  <!-- scroll to top tracker -->
+  <span>
+    <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
+  </span>
+  
+  <!--==========================
+    Header & Menu
+    ============================-->
+  <header id="header" class="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#pagetop" class="scrollto"><span>e</span>Startup</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu" >
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li class="menu-has-children">
+            <a href="" class="sf-with-ul">Drop Down</a>
+            <i class="fa fa-chevron-down"></i>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <!-- box-shadow workaround -->
+  <span class="header-shadow"></span>
+
+  <!--==========================
+    Hero Section
+    ============================-->
+    <section id="hero" class="wow fadeIn">
+      <div class="hero-container">
+        <h1>Welcome to eStartups</h1>
+        <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
+        <amp-img class="hero-img" alt="Hero Imgs"
+          width="768" 
+          height="398"
+          layout="fixed"
+          src="./images/hero-img.png" 
+          srcset="./images/hero-img.png 768w, ./images/hero-img-s.png 420w"
+        ></amp-img>
+        <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+        <div class="btns">
+          <a href="#"><i class="fab fa-apple fa-3x"></i> App Store</a>
+          <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
+          <a href="#"><i class="fab fa-windows fa-3x"></i> windows</a>
+        </div>
+      </div>
+    </section><!-- #hero -->
+
+  <!--==========================
+    Get Started Section
+    ============================-->
+    <section id="get-started" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+
+          <h2>simple systeme fordiscount </h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-block">
+
+              <amp-img width="60" height="60" src="./images/svg/cloud.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>introducing whatsapp</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <a href="#">read more</a>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-block">
+
+              <amp-img width="60" height="60" src="./images/svg/planet.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>user friendly interface</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <a href="#">read more</a>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-block">
+
+              <amp-img width="60" height="60" src="./images/svg/asteroid.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>build the app everyone love</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <a href="#">read more</a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>  
+    </section>
+
+
+  <!--==========================
+    About Us Section
+    ============================-->
+    <section id="about-us" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+    
+    
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-md-5 col-lg-3">
+            <amp-img 
+                width="255px" 
+                height="526px" 
+                layout= "fixed"
+                src="./images/about-img.png" 
+                srcset="./images/about-img.png 768w, ./images/about-img-s.png 420w"
+            alt="About" class="about-img"></amp-img>
+          </div>
+
+          <div class="col-md-7 col-lg-5">
+            <div class="about-content">
+
+              <h2><span>eStartup</span>UI Design Mobile </h2>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+              </p>
+
+              <ul class="list-unstyled">
+                <li><i class="fa fa-angle-right"></i>Creative Design</li>
+                <li><i class="fa fa-angle-right"></i>Retina Ready</li>
+                <li><i class="fa fa-angle-right"></i>Easy to Use</li>
+                <li><i class="fa fa-angle-right"></i>Unlimited Features</li>
+                <li><i class="fa fa-angle-right"></i>Unlimited Features</li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+  <!--==========================
+    Features Section
+    ============================-->
+
+    <section id="features" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Amazing Features.</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/paint-palette.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>creative design</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/vector.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>Retina Ready</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/design-tool.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>easy to use</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/asteroid.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>Free Updates</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/asteroid.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>Free Updates</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/cloud-computing.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>App store support</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/pixel.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>Perfect Pixel</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <amp-img width="60" height="60" src="./images/svg/code.svg" alt="img" class="img-fluid"></amp-img>
+              <h4>clean codes</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+
+  <!--==========================
+    Screenshots Section
+    ============================-->
+  <section id="screenshots" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>App Gallery</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <amp-carousel id="carouselWithPreview" height="425" 
+          layout="fixed-height"
+          autoplay
+          type="carousel">
+          <amp-img src="./images/screen/m/1.jpg" width="255" height="425"
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )"
+            srcset="./images/screen/m/1.jpg 400w, ./images/screen/s/1.jpg 200w"
+          alt="a sample image"></amp-img>
+          <amp-img src="./images/screen/m/2.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/2.jpg 400w, ./images/screen/s/2.jpg 200w"
+          alt="another sample image"></amp-img>
+          <amp-img src="./images/screen/m/3.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/3.jpg 400w, ./images/screen/s/3.jpg 200w"
+          alt="and another sample image"></amp-img>
+         
+          <amp-img src="./images/screen/m/4.jpg" width="255" height="425"
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/4.jpg 400w, ./images/screen/s/4.jpg 200w"
+          alt="a sample image"></amp-img>
+          <amp-img src="./images/screen/m/5.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/5.jpg 400w, ./images/screen/s/5.jpg 200w"
+          alt="another sample image"></amp-img>
+          <amp-img src="./images/screen/m/6.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/6.jpg 400w, ./images/screen/s/6.jpg 200w"
+          alt="and another sample image"></amp-img>
+
+          <amp-img src="./images/screen/m/7.jpg" width="255" height="425"
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/7.jpg 400w, ./images/screen/s/7.jpg 200w"
+          alt="a sample image"></amp-img>
+          <amp-img src="./images/screen/m/8.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/8.jpg 400w, ./images/screen/s/8.jpg 200w"
+          alt="another sample image"></amp-img>
+          <amp-img src="./images/screen/m/9.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/9.jpg 400w, ./images/screen/s/9.jpg 200w"
+          alt="and another sample image"></amp-img>
+
+          <amp-img src="./images/screen/m/10.jpg" width="255" height="425"
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/10.jpg 400w, ./images/screen/s/10.jpg 200w"
+          alt="a sample image"></amp-img>
+          <amp-img src="./images/screen/m/11.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/11.jpg 400w, ./images/screen/s/11.jpg 200w"
+          alt="another sample image"></amp-img>
+          <amp-img src="./images/screen/m/12.jpg" width="255" height="425" 
+            layout="responsive"
+            sizes="(max-width: 470px) 91vw, (max-width: 767px) calc( 87vw / 2.25 ), (max-width: 1023px) calc( 87vw / 3 ), (max-width: 1024px) calc( 87.75vw / 4 ), calc( 1110px / 4.1 )" 
+            srcset="./images/screen/m/12.jpg 400w, ./images/screen/s/12.jpg 200w"
+          alt="and another sample image"></amp-img>
+          
+        </amp-carousel>
+
+        <amp-selector id="carouselWithPreviewSelector"
+          class="carousel-preview"
+          on="select:carouselWithPreview.goToSlide(index=event.targetOption)"
+          layout="container">
+          <span option="0" selected></span>
+          <span option="1"></span>
+          <span option="2"></span>
+
+          <span option="3"></span>
+          <span option="4"></span>
+          <span option="5"></span>
+
+          <span option="6"></span>
+          <span option="7"></span>
+          <span option="8"></span>
+
+          <span option="9"></span>
+          <span option="10"></span>
+          <span option="11"></span>
+        </amp-selector>
+  </section>
+
+  <!--==========================
+    Video Section
+    ============================-->
+
+    <section id="video" class="text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+      <div class="video-player">
+      
+        <amp-video id="sampleVid"
+          controls
+          width="720"
+          height="420"
+          layout="fixed"
+          poster="./images/video-bg.jpg"
+          src="//amphtml.creativecreate.com/images/video.mp4">
+        </amp-video>
+
+        <div id="myOverlay" class="vid-overlay">
+          <div class="play-icon" role="button" tabindex="0" on="tap:myOverlay.hide, sampleVid.play"></div>
+            <amp-img class="poster-image" layout="fill" src="./images/video-bg.jpg"
+                srcset="./images/video-bg.jpg 1024w, ./images/video-bg-m.jpg 768w, ./images/video-bg-s.jpg 430w, "
+            ></amp-img>
+        </div>
+      
+      </div>
+    </section>
+
+  <!--==========================
+    Team Section
+    ============================-->
+    <section id="team" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="60%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+
+          <h2>Team Member</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-md-4 col-lg-3">
+            <div class="team-block bottom">
+              <amp-img width="255" height="255" src="./images/team/1.jpg" 
+                  layout="responsive"
+                  srcset="./images/team/1-w.jpg 370w, ./images/team/1.jpg 768w" 
+              class="img-responsive" alt="img"></amp-img>
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-4 col-lg-3">
+            <div class="team-block bottom">
+              <amp-img width="255" height="255" src="./images/team/2.jpg" 
+                  layout="responsive"
+                  srcset="./images/team/2-w.jpg 370w, ./images/team/2.jpg 768w" 
+              class="img-responsive" alt="img"></amp-img>
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-4 col-lg-3">
+            <div class="team-block bottom">
+              <amp-img width="255" height="255" src="./images/team/3.jpg" 
+                  layout="responsive"
+                  srcset="./images/team/3-w.jpg 370w, ./images/team/3.jpg 768w" 
+              class="img-responsive" alt="img"></amp-img>
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-4 col-lg-3">
+            <div class="team-block bottom">
+              <amp-img width="255" height="255" src="./images/team/4.jpg" 
+                  layout="responsive"
+                  srcset="./images/team/4-w.jpg 370w, ./images/team/4.jpg 768w" 
+              class="img-responsive" alt="img"></amp-img>
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  <!--==========================
+    Testimonials Section
+    ============================-->
+    <section id="testimonials" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="60%" data-easing="ease-in">
+      <div class="testimonials-content">
+      <i class="fas fa-quote-right testimonials-content-icon"></i>              
+        <amp-carousel height="250px" width="auto" layout="fixed-height" type="slides" autoplay class="testimonials-slider">
+          
+            <div class="top-top">
+              <h2>Our Users Speack volumes us</h2>
+              <p class="t-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book. It has survived not only five centuries.
+              </p>
+              <h4>Kimberly Tran<span>manager</span></h4>
+            </div>
+          
+            <div class="top-top">
+              <h2>Our Users Speack volumes us</h2>
+              <p class="t-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book. It has survived not only five centuries.</p>
+              <h4>Henderson<span>manager</span></h4>
+            </div>
+          
+            <div class="top-top">
+              <h2>Our Users Speack volumes us</h2>
+              <p class="t-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book. It has survived not only five centuries.</p>
+              <h4>David Spark<span>manager</span></h4>
+            </div>
+      
+        </amp-carousel>
+      </div>
+    </section>
+
+
+  <!--==========================
+    Pricing Table Section
+    ============================-->
+    <section id="pricing" class="padd-section text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+
+          <h2>Meet With Price</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="table">
+                <h4>basic</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="table">
+                <h4>PERSONAL</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="table">
+                <h4>BUSINESS</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="table">
+                <h4>profeesional</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--==========================
+    Blog Section
+    ============================-->
+    <section id="blog" class="padd-section slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+
+          <h2>Latest posts</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="#">
+                <amp-img width="360" height="220" src="./images/blog/blog-image-1.jpg" class="img-responsive" 
+                    layout="responsive"
+                alt="img">
+              </a>
+              <div class="content-blog">
+                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <span>05, juin 2017</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="#">
+                <amp-img width="360" height="220" src="./images/blog/blog-image-2.jpg" class="img-responsive" 
+                    layout="responsive"
+                alt="img">
+              </a>
+              <div class="content-blog">
+                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <span>05, juin 2017</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="#">
+                <amp-img width="360" height="220" src="./images/blog/blog-image-3.jpg" class="img-responsive" 
+                    layout="responsive"
+                alt="img">
+              </a>
+              <div class="content-blog">
+                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <span>05, juin 2017</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!--==========================
+    Newsletter Section
+    ============================-->
+    <section id="newsletter" class="newsletter text-center slideIn" amp-fx="fly-in-bottom" data-margin-start="60%" data-easing="ease-in">
+      <div class="overlay padd-section">
+        <div class="container">
+
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6">
+              <form class="form-inline" 
+                  action-xhr="https://test-form.php" 
+                  method="post" >
+                <input type="email" class="form-control " placeholder="Email Adress" name="email">
+                <input type="submit" class="btn btn-default" value="Subscribe">
+              <!-- submit status message -->
+              <div submit-success>
+                <template type="amp-mustache"> Your message has been sent. Thank you!</template>
+              </div>
+              <div submit-error>
+                <template type="amp-mustache"> Error! </template>
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </section>
+
+  <!--==========================
+    Contact Section
+    ============================-->
+    <section id="contact" class="padd-section slideIn" amp-fx="fly-in-bottom" data-margin-start="40%" data-easing="ease-in">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Contact</h2>
+          <p class="separator">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="fa fa-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+              <form 
+                  action-xhr="https://test-form.php" 
+                  method="post" 
+                  role="form" class="contactForm form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><input type="submit" value="Send Message"></div>
+                <!-- submit status message -->
+                <div submit-success>
+                  <template type="amp-mustache"> Your message has been sent. Thank you!</template>
+                </div>
+                <div submit-error>
+                  <template type="amp-mustache"> Error! </template>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #contact -->
+    <!-- section animation trigger -->
+ 
+  <!--==========================
+    Footer
+    ============================-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-lg-4">
+            <div class="footer-logo">
+
+              <a class="navbar-brand" href="#">eStartup</a>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2">
+            <div class="list-menu">
+
+              <h4>Abou Us</h4>
+
+              <ul class="list-unstyled">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Features item</a></li>
+                <li><a href="#">Live streaming</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2">
+            <div class="list-menu">
+
+              <h4>Abou Us</h4>
+
+              <ul class="list-unstyled">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Features item</a></li>
+                <li><a href="#">Live streaming</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2">
+            <div class="list-menu">
+
+              <h4>Support</h4>
+
+              <ul class="list-unstyled">
+                <li><a href="#">faq</a></li>
+                <li><a href="#">Editor help</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2">
+            <div class="list-menu">
+
+              <h4>Abou Us</h4>
+
+              <ul class="list-unstyled">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Features item</a></li>
+                <li><a href="#">Live streaming</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <div class="container">
+          <p>© Copyrights eStartup. All rights reserved.</p>
+          <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+          -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+<!--  
+*
+* AMP animations
+*
+-->
+
+<!-- scroll to top btn and scripts -->
+  <!-- show btn -->
+<amp-animation id="showAnim" layout="nodisplay">
+  <script type="application/json">
+  [
+    {
+      "duration": "200ms",
+      "fill": "both",
+      "iterations": "1",
+      "direction": "alternate",
+      "animations": [{  "selector": "#scrollToTopButton", 
+                        "keyframes": [{ "opacity": "1", "visibility": "visible" }] 
+                    }]
+    },
+    {
+      "duration": "200ms",
+      "fill": "both",
+      "iterations": "1",
+      "direction": "alternate",
+      "animations": [{  "selector": ".header-shadow", 
+                        "keyframes": [{ "opacity": "1" }] 
+                    }]
+    }
+  ]
+  </script>
+</amp-animation>
+  <!-- hideanimation -->
+<amp-animation id="hideAnim" layout="nodisplay">
+  <script type="application/json">
+  [
+    {
+      "duration": "200ms",
+      "fill": "both",
+      "iterations": "1",
+      "direction": "alternate",
+      "animations": [{  "selector": "#scrollToTopButton", 
+                        "keyframes": [{ "opacity": "0", "visibility": "hidden" }] 
+                    }]
+    },
+    {
+      "duration": "200ms",
+      "fill": "both",
+      "iterations": "1",
+      "direction": "alternate",
+      "animations": [{  "selector": ".header-shadow", 
+                        "keyframes": [{ "opacity": "0" }] 
+                    }]
+    }
+  ]
+  </script>
+</amp-animation>
+  <!-- btn -->
+<a href="#" id="scrollToTopButton" class="scrollToTop" on="tap:header.scrollTo()">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+<!-- header background shadow show/hide -->
+
+
+
+<nav id="mobile-nav" [class]="visible ? 'shownav' : 'hidenav'" class="hidenav">
+  <ul class=""  id="">
+    <li class="menu-active"><a href="#hero">Home</a></li>
+    <li><a href="#about-us">About</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li class="menu-has-children">
+      <i class="fa fa-chevron-down"></i>
+      <a class="sf-with-ul">Drop Down</a>
+      <ul>
+        <li><a href="#">Drop Down 1</a></li>
+        <li><a href="#">Drop Down 3</a></li>
+        <li><a href="#">Drop Down 4</a></li>
+        <li><a href="#">Drop Down 5</a></li>
+      </ul>
+    </li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div id="mobile-body-overly"></div><div id="i4c-dialogs-container"></div></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
